@@ -1,0 +1,28 @@
+@import url("https://unpkg.com/iv-viewer/dist/iv-viewer.css");
+.wrap {
+  border-left: solid black 1px;
+  border-right: solid black 1px;
+}
+
+.ProductName {
+  margin-bottom: 10px;
+}
+
+div.item_content {
+  height: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+}
+div.item_content * {
+  box-sizing: border-box;
+}
+div.item_content .img_wrap {
+  width: 60%;
+  aspect-ratio: 4/3;
+  padding: 20px;
+}
+div.item_content .item_info_wrap {
+  width: calc(40% - 10px);
+  margin-top: 20px;
+  margin-left: 10px;
+}
