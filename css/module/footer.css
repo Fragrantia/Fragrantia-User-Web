@@ -6,10 +6,7 @@
   box-sizing: border-box;
   width: 100%;
   padding: 20px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  background-color: #000;
+  background-color: white;
 }
 .footer a, .footer li, .footer div, .footer span, .footer button {
   color: #727272;
@@ -22,19 +19,19 @@
 }
 .footer > .footer_link_wrap .footer_link {
   user-select: none;
-  color: white;
+  color: black;
   font-family: "Montserrat";
   font-weight: 200;
   font-size: 1.6rem;
   line-height: 2;
-  background: linear-gradient(to left, black 50%, white 50%);
+  background: linear-gradient(to left, white 50%, black 50%);
   background-position: right;
   background-size: 200% 100%;
 }
 .footer > .footer_link_wrap .footer_link:hover {
   transition: all 0.3s ease-in-out;
   background-position: left;
-  color: black;
+  color: white;
 }
 .footer > .company_info {
   margin-right: 20px;
@@ -43,6 +40,7 @@
 .footer > .company_info button {
   border: rgb(92, 92, 92) 1px solid;
   border-radius: 12px;
+  padding: 3px;
   background: transparent;
   margin-left: 6px;
 }
