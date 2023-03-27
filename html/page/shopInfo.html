@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../css/page/shopInfo.css">
+    <link href="../../css/global.css" rel="stylesheet">
+    <script type="text/javascript"
+            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a1d04a27c7e45b8a44999bc8a7a55a62"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../../js/pageModuleSetting.js"></script>
+    <script src="../../js/shopInfo.js"></script>
+</head>
+<body>
+<div id="header"></div>
+<div id="main_nav"></div>
+
+<div id="shop_info">
+    <div id="map"></div>
+
+    <div class="text_box">
+        <p class="text">매장을 선택해주세요</p>
+    </div>
+
+    <div id="store_modal" class="store_modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="store-info">
+                <div class="store-image">
+                    <img class="store_image">
+                </div>
+                <div class="store-details">
+                    <h2 class="store_name english_font"></h2>
+                    <p class="store_description"></p>
+
+
+                    <div class="store_address_box">
+                        <div class="details_border"></div>
+                        <p class="store_address_title english_font">Way to Come</p>
+                        <p class="store_tel"></p>
+                        <p class="store_address"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer"></div>
+</body>
+</html>
