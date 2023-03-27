@@ -17,7 +17,7 @@ $(function() {
             address: '서울 강남구 미추홀동 130번길로 미누리 건물',
             tel: '02-0000-0000',
             latlng: new kakao.maps.LatLng(37.501921, 127.026946),
-            image: '../../images/shop_info.jpg',
+            image: '../../images/shopInfo.jpg',
             description:
                 '느낌이 새롭고 더욱 멋진 공간으로 돌아왔습니다.'
                 + '<br/>' + '<br/>' +
