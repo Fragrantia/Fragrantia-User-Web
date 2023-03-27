@@ -1,10 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../../css/module/header.css">
+  <meta charset="UTF-8">
+  <!-- 외부 스타일시트(전역 <- 리셋포함) -->
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/module/global.css">
+  <link rel="stylesheet" href="../../css/module/header.css">
+
+  <!-- 외부 스크립트 (자바스크립트, jQuery) -->
+  <script src="../../js/Jquery.min.js"></script> <!-- 제이쿼리 프로그램 연결(기본) -->
+  <script src="../../js/HeaderToggle.js"></script> <!-- 제이쿼리 프로그램 연결(토글) -->
+
 </head>
 <body>
-
+  <header class="user_header cfixed">
+    <nav>
+      <ul class="main_nav">
+        <li><a href="#">BRAND</a></li>
+        <li><a href="#">FLOWER</a></li>
+        <li><a href="#">PERFUME</a></li>
+        <li><a href="../page/shopInfo.html">STORE</a></li>
+      </ul>
+    </nav>
+    <span class="menu-toggle-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+    <div class="user_logo"> <!-- 스토리보드 수정 필요 >> 변경 전 : user_header, 변경 후 : user_logo -->
+      <a href="../page/index.html"><img src="../../images/main_logo.jpg" alt="로고 이미지"></a>
+    </div>
+  </header>
 </body>
 </html>

@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Sans+KR:wght@300&display=swap");
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+}
+.footer a, .footer li, .footer div, .footer span, .footer button {
+  color: #727272;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.footer > .footer_link_wrap {
+  margin-top: 1rem;
+  margin-left: 10px;
+  height: 100px;
+}
+.footer > .footer_link_wrap .footer_link {
+  user-select: none;
+  color: black;
+  font-family: "Montserrat";
+  font-weight: 200;
+  font-size: 1.6rem;
+  line-height: 2;
+  background: linear-gradient(to left, white 50%, black 50%);
+  background-position: right;
+  background-size: 200% 100%;
+}
+.footer > .footer_link_wrap .footer_link:hover {
+  transition: all 0.3s ease-in-out;
+  background-position: left;
+  color: white;
+}
+.footer > .company_info {
+  margin-right: 20px;
+  line-height: 1.6;
+}
+.footer > .company_info button {
+  border: rgb(92, 92, 92) 1px solid;
+  border-radius: 12px;
+  padding: 3px;
+  background: transparent;
+  margin-left: 6px;
+}
+.footer .item {
+  margin: 10px;
+}
+.footer .row1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
