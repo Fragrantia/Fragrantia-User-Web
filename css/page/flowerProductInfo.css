@@ -1,14 +1,12 @@
 @import url("https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Slab:wght@200;400;500&display=swap");
 .wrap {
   border-left: solid black 1px;
   border-right: solid black 1px;
 }
 
-.ProductName {
-  margin-bottom: 10px;
-}
-
 div.item_content {
+  margin-top: 100px;
   height: 1000px;
   display: flex;
   flex-wrap: wrap;
@@ -18,23 +16,44 @@ div.item_content * {
 }
 div.item_content .img_wrap {
   width: 60%;
-  aspect-ratio: 4/3;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-div.item_content .img_wrap .swiper-slide {
+div.item_content .img_wrap .swiper {
+  aspect-ratio: 4/3;
+}
+div.item_content .img_wrap .swiper .swiper-slide {
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-div.item_content .img_wrap .swiper-slide img {
+div.item_content .img_wrap .swiper .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 div.item_content .item_info_wrap {
-  width: calc(40% - 10px);
-  margin-top: 20px;
-  margin-left: 10px;
+  width: calc(40% - 20px);
+  margin: 20px 10px 0 10px;
+  line-height: 1.6;
+}
+div.item_content .item_info_wrap div {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+div.item_content .item_info_wrap .item_name {
+  font-family: "Roboto Slab";
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+div.item_content .item_info_wrap .item_price {
+  font-family: "Roboto Slab";
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+div.item_content .item_info_wrap .item_description {
+  font-family: "Montserrat";
+  font-weight: 300;
 }
