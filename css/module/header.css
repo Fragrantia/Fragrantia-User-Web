@@ -1,72 +1,74 @@
 /* ===== 헤더 전체 ===== */
-header.user_header{
-    width: 100%;
-    height: 150px;
-    background-color: antiquewhite;
+.user_header{
+  position: relative; /* 메인 네비에 absolute 쓰기 위함 */
+  width: 100%;
+  height: 60px;
 }
-header.cfixed::after {
+.cfixed::after { /* 가상 클래스 이용하여 자식요소들 크기의 합이 부모요소 이상으로 설정되면 사라지게 하는 역할 */
   display: block;
   content: "";
   clear: both;
 }
-/* == logo가 올 부분 == */
-header>div.user_logo {
-  width: 150px;
-  position: absolute;
-  left: 50%;
-  margin-left: -75px;
-  background-color: aqua; /* 확인용 */
-}
-
-div.user_logo>a {
-  overflow: hidden;
-  display: inline-block;
-  background-color: brown; /* 확인용 */
-}
-div.user_logo>a>img {
-  width: 60px;
-  height: 60px;
-  float: left;
-  background-color: yellow; /* 확인용 */
-}
-nav.main_nav li>a { 
-  display: block;
-  font-size: 1.2rem;
-}
-nav.main_nav li>a:hover {
-  color: rgb(92, 92, 92);
-}
-
-header.header ul.main_nav{
+/* == 메인 네비 부분 == */
+.user_header ul.main_nav{
   display:none;
   position:absolute;
   top:100%;
   left:0;
-  width:100%;
-  background:#3f51b5;
+  width:20%;
+  z-index: 99;
+  background: rgba(255, 255, 255, 0.552); /* 추후 white로 변경 요망! */
 }
-header.header ul.gnb>li{
-  border-bottom: 1px solid #303f9f;
-}
-header.header ul.gnb>li>a{
+.user_header ul.main_nav>li>a{
   display:block;
   padding:14px 0 14px 5%;
-  font-size:14px;
-  color:#fff;
+  margin-left: 10px;
+  font-size:1.2rem;
+  color: black;
 }
-header.header>span.menu-toggle-btn{
-  float:right;
+.user_header ul.main_nav>li>a:hover {
+  color: rgb(92, 92, 92);
+}
+/* == 토글 버튼 부분 == */
+.user_header>span.menu-toggle-btn{
+  float:left;
   width:20px;
-  margin-top:4px;
+  margin-top: 20px;
+  margin-left: 22px;
   cursor:pointer;
 }
-header.header>span.menu-toggle-btn>span{
+.user_header>span.menu-toggle-btn>span{
   display: block;
   width: 100%;
   height: 2px;
-  background: #3f51b5;
+  border-radius: 5px;
+  background: rgb(82, 82, 82);
 }
-header.header>span.menu-toggle-btn>span:nth-child(2){
-  margin: 5px 0;
+.user_header>span.menu-toggle-btn>span:nth-child(2){
+  margin: 6px 0;
 }
-
+/* == logo가 올 부분 == */
+div.user_logo {
+  width: 150px;
+  position: absolute;
+  left: 50%;
+  margin-left: -70px;
+}
+div.user_logo>a {
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+}
+div.user_logo>a>img {
+  float: left;
+  width: 100%;
+  height: 56px;
+  text-align: center;
+}
+.test {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  height: 100px;
+  background-color: aquamarine;
+}
