@@ -5,3 +5,11 @@
 /httpRequests/
 
 .idea/**
+
+
+#scss 사용
+/css/scss
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
