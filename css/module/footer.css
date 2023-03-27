@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Sans+KR:wght@300&display=swap");
-a, li, div, span, button {
-  color: #727272;
-  font-family: 'Noto Sans KR',sans-serif; }
-
 .footer {
   display: flex;
   flex-wrap: wrap;
@@ -13,30 +9,48 @@ a, li, div, span, button {
   position: fixed;
   left: 0;
   bottom: 0;
-  background-color: #000; }
-  .footer > .footer_link {
-    margin-top: 1rem;
-    margin-left: 10px;
-    height: 100px; }
-    .footer > .footer_link a {
-      color: white;
-      font-family: 'Montserrat';
-      font-weight: 200;
-      font-size: 1.6rem;
-      line-height: 2; }
-  .footer > .company_info {
-    margin-right: 20px;
-    line-height: 1.6; }
-    .footer > .company_info button {
-      border: #5c5c5c 1px solid;
-      border-radius: 12px;
-      background: transparent;
-      margin-left: 6px; }
-  .footer .item {
-    margin: 10px; }
-  .footer .row1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-
-/*# sourceMappingURL=footer.css.map */
+  background-color: #000;
+}
+.footer a, .footer li, .footer div, .footer span, .footer button {
+  color: #727272;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.footer > .footer_link_wrap {
+  margin-top: 1rem;
+  margin-left: 10px;
+  height: 100px;
+}
+.footer > .footer_link_wrap .footer_link {
+  user-select: none;
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 200;
+  font-size: 1.6rem;
+  line-height: 2;
+  background: linear-gradient(to left, black 50%, white 50%);
+  background-position: right;
+  background-size: 200% 100%;
+}
+.footer > .footer_link_wrap .footer_link:hover {
+  transition: all 0.3s ease-in-out;
+  background-position: left;
+  color: black;
+}
+.footer > .company_info {
+  margin-right: 20px;
+  line-height: 1.6;
+}
+.footer > .company_info button {
+  border: rgb(92, 92, 92) 1px solid;
+  border-radius: 12px;
+  background: transparent;
+  margin-left: 6px;
+}
+.footer .item {
+  margin: 10px;
+}
+.footer .row1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
