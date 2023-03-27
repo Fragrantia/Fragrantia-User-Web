@@ -1,3 +1,4 @@
+@import url("https://unpkg.com/iv-viewer/dist/iv-viewer.css");
 .wrap {
   border-left: solid black 1px;
   border-right: solid black 1px;
@@ -8,6 +9,7 @@
 }
 
 div.item_content {
+  height: 1000px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -18,11 +20,6 @@ div.item_content .img_wrap {
   width: 60%;
   aspect-ratio: 4/3;
   padding: 20px;
-}
-div.item_content .img_wrap img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 div.item_content .item_info_wrap {
   width: calc(40% - 10px);
