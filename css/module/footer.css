@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Sans+KR:wght@300&display=swap");
+a, li, div, span, button {
+  color: #727272;
+  font-family: 'Noto Sans KR',sans-serif; }
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #000; }
+  .footer > .footer_link {
+    margin-top: 1rem;
+    margin-left: 10px;
+    height: 100px; }
+    .footer > .footer_link a {
+      color: white;
+      font-family: 'Montserrat';
+      font-weight: 200;
+      font-size: 1.6rem;
+      line-height: 2; }
+  .footer > .company_info {
+    margin-right: 20px;
+    line-height: 1.6; }
+    .footer > .company_info button {
+      border: #5c5c5c 1px solid;
+      border-radius: 12px;
+      background: transparent;
+      margin-left: 6px; }
+  .footer .item {
+    margin: 10px; }
+  .footer .row1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+
+/*# sourceMappingURL=footer.css.map */
