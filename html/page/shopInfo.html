@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="../../css/page/shopInfo.css">
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a1d04a27c7e45b8a44999bc8a7a55a62"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="../../js/MainPageModuleSetting.js"></script>
+    <script src="../../js/PageModuleSetting.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -26,14 +26,15 @@
             <div class="store-info">
                 <div class="store-image">
                     <img class="store_image">
-                    <div class="store_address_box">
-                        <p class="store_tel"></p>
-                        <p class="store_address"></p>
-                    </div>
                 </div>
                 <div class="store-details">
                     <h2 class="store_name"></h2>
                     <p class="store_description"></p>
+
+                    <div class="store_address_box">
+                        <p class="store_tel"></p>
+                        <p class="store_address"></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -55,11 +56,11 @@
         // 매장 위치 배열
         var stores = [
             {
-                name: 'Fragrantia - Gangnam Store',
+                name: 'Gangnam Store',
                 address: '서울 강남구 미추홀동 130번길로 미누리 건물',
                 tel: '02-0000-0000',
                 latlng: new kakao.maps.LatLng(37.501921, 127.026946),
-                image: 'https://picsum.photos/250',
+                image: '../../images/shop_info.jpg',
                 description:
                     '느낌이 새롭고 더욱 멋진 공간으로 돌아왔습니다.'
                     + '<br/>' + '<br/>' +
