@@ -6,7 +6,8 @@
 
 .idea/**
 
-
+#vs code workspace 설정
+/.vscode
 #scss 사용
 /css/scss
 .sass-cache/
