@@ -5,9 +5,10 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding-top: 20px;
 }
 .itembox{
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     width: 45%;
     height: 450px;
     margin-bottom: 5%;
@@ -18,11 +19,13 @@
 }
 .itembox img:hover{
     opacity: 0.3;
-    transition: 0.3s;
+    transition: all 0.3s;
 }
 .itembox h3{
     text-align: center;
     font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
 }
 @media all and (min-width:768px) and (max-width:1024px){
     .itembox{
@@ -32,5 +35,8 @@
 @media all and (max-width:768px){
     .itembox{
         height: 350px;
-    }   
+    }  
+    .content2{
+        padding-top: 30px;
+    } 
 }
