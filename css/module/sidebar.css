@@ -1,12 +1,39 @@
 .sidebar{
     width: 90%;
-
+    /* height: 300px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* background-color: rgb(92, 92, 92); */
+}
+.sidebarHead{
+    width: 100%;
+    height: 50px;
 }
 .filter{
-    display: flex;
+    width: 100%;
+    /* height: 200px; */
+    display: none;
+    background-color: rgba(92, 92, 92, 0.15);
     justify-content: space-around;
+}
+
+.sidebar .filter.show {
+  display: block;
+  display: flex;
 }
 .search{
     display: inline-block;
     width: 30%;
+    border-bottom: 1px solid rgba(92, 92, 92, 0.15);
 }
+/* .toggleFilter:hover{
+    
+} */
+.filter .color,
+.filter .use{
+    width: 40%;
+    /* width: 200px;
+    height: 200px; */
+}
+
