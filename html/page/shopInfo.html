@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <title>ShopInfo</title>
+
+    <!-- meta Setting -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="../../css/page/shopInfo.css">
+
+    <!-- 외부 스타일시트(전역 <- 리셋포함) -->
     <link href="../../css/global.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/page/shopInfo.css">
+
+    <!-- 외부 스크립트 (자바스크립트, jQuery) -->
     <script type="text/javascript"
             src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a1d04a27c7e45b8a44999bc8a7a55a62"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
     <script src="../../js/pageModuleSetting.js"></script>
     <script src="../../js/shopInfo.js"></script>
 </head>
@@ -17,31 +23,43 @@
 <div id="main_nav"></div>
 
 <div id="shop_info">
+
+    <!-- 카카오 맵 영역 -->
     <div id="map"></div>
 
+    <!-- 텍스트 영역 -->
     <div class="text_box">
         <p class="text">매장을 선택해주세요</p>
     </div>
 
+    <!-- 모달 영역 -->
     <div id="store_modal" class="store_modal">
         <div class="modal-content">
             <span class="close">&times;</span>
+
+            <!-- 상세내용 표시 영역 -->
             <div class="store-info">
+
+                <!-- 이미지 표시 영역 -->
                 <div class="store-image">
                     <img class="store_image">
                 </div>
+
+                <!-- 제목, 본문, 주소 표시 영역 -->
                 <div class="store-details">
                     <h2 class="store_name english_font"></h2>
                     <p class="store_description"></p>
 
-
+                    <!-- 주소, 폰 표시 영역 -->
                     <div class="store_address_box">
                         <div class="details_border"></div>
                         <p class="store_address_title english_font">Way to Come</p>
                         <p class="store_tel"></p>
                         <p class="store_address"></p>
                     </div>
+
                 </div>
+
             </div>
         </div>
     </div>
