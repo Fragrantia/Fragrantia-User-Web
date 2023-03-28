@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
     //카카오 맵 적용할 요소 선택
     var container = document.getElementById('map');
 
@@ -14,10 +14,10 @@ $(function() {
     var stores = [
         {
             name: 'Gangnam Store',
-            address: '서울 강남구 미추홀동 130번길로 미누리 건물',
+            address: '서울 강남구 ○○○○○ ○○',
             tel: '02-0000-0000',
             latlng: new kakao.maps.LatLng(37.501921, 127.026946),
-            image: '../../images/shopInfo.jpg',
+            image: '../../images/shopInfo1.jpg',
             description:
                 '느낌이 새롭고 더욱 멋진 공간으로 돌아왔습니다.'
                 + '<br/>' + '<br/>' +
@@ -32,18 +32,39 @@ $(function() {
                 '향의 세계로 떠나보세요. 향의 두 번째 이야기 여러분을 반겨드립니다.'
         },
         {
-            name: '매장2',
-            address: '서울시 서초구 양재동',
-            latlng: new kakao.maps.LatLng(37.470576, 127.040736),
-            image: 'https://picsum.photos/250',
-            description: '매장 2에 대한 설명입니다.'
+            name: 'Jamsil Store',
+            address: '서울시 잠실 ○○○○○ ○○',
+            latlng: new kakao.maps.LatLng(37.514366, 127.101938),
+            image: '../../images/shopInfo3.jpg',
+            description:
+                '잠실 지역에 위치한 스토어입니다.'
+                + '<br/>' + '<br/>' +
+                '혁신적인 디자인과 독특한 분위기가 조성된 공간'
+                + '<br/>' + '<br/>' +
+                '브랜드 철학과 컨셉을 반영한 다양한 제품들을 만나보실 수 있습니다.'
+                + '<br/>' + '<br/>' +
+                '매력적인 컬렉션과 함께 향의 세계로의 여행을 떠나보세요.'
+                + '<br/>' + '<br/>' +
+                '잠실 스토어에서 새로운 향의 이야기를 만나보실 수 있습니다.'
         },
         {
-            name: '매장3',
-            address: '서울시 송파구 잠실동',
-            latlng: new kakao.maps.LatLng(37.514366, 127.101938),
-            image: 'https://picsum.photos/250',
-            description: '매장 3에 대한 설명입니다.'
+            name: 'Yangjae Store',
+            address: '서울시 서초구 양재동 ○○○○○ ○○',
+            tel: '02-0000-0000',
+            latlng: new kakao.maps.LatLng(37.470576, 127.040736),
+            image: '../../images/shopInfo2.jpg',
+            description:
+                '새로운 매력과 독특한 분위기로 변신한 공간입니다.'
+                + '<br/>' + '<br/>' +
+                ' 브랜드 철학과 컨셉을 반영한 재해석된 인테리어가 돋보이며, '
+                + '<br/>' + '<br/>' +
+                '디자인과 혁신적인 브랜드 경험을 즐길 수 있는 특별한 공간입니다. '
+                + '<br/>' + '<br/>' +
+                '지금 바로 방문하여 다양한 새로운 컬렉션과 제품들을 만나보세요. '
+                + '<br/>' + '<br/>' +
+                '트렌디한 분위기와 함께 향의 세계로의 여행을 떠나보세요. '
+                + '<br/>' + '<br/>' +
+                '새로운 향의 이야기가 여러분을 기다리고 있습니다.'
         }
     ];
 
