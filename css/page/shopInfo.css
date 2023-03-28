@@ -158,14 +158,16 @@
         overflow: auto;
     }
 
-    .store-image {
-        margin-top: 20px;
-        width: 200px;
-        height: 400px;
+    .store-info {
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    .store-details {
-        margin-top: 30px;
+    .store-image {
+        width: 100%;
+        height: 400px;
+        margin: 20px auto 0 10px;
+        order: 1;
     }
 
     .store_name {
