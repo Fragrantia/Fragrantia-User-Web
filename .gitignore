@@ -13,9 +13,9 @@
 *.css.map
 *.sass.map
 *.scss.map
-gulpfile.js
 
-#npm&yarn
+#node.js 모듈&플러그인 파일
 package.json
 yarn.lock
 /node_modules
+gulpfile.babel.js
