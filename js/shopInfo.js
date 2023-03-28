@@ -34,6 +34,7 @@ $(function () {
         {
             name: 'Jamsil Store',
             address: '서울시 잠실 ○○○○○ ○○',
+            tel: '02-0000-0000',
             latlng: new kakao.maps.LatLng(37.514366, 127.101938),
             image: '../../images/shopInfo3.jpg',
             description:
