@@ -1,0 +1,12 @@
+.sidebar{
+    width: 90%;
+
+}
+.filter{
+    display: flex;
+    justify-content: space-around;
+}
+.search{
+    display: inline-block;
+    width: 30%;
+}

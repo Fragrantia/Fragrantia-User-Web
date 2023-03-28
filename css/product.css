@@ -18,7 +18,7 @@
 }
 .itembox img:hover{
     opacity: 0.3;
-    transition: 0.3s;
+    transition: all 0.3s;
 }
 .itembox h3{
     text-align: center;
