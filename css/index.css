@@ -1,0 +1,134 @@
+#wrap {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* background-color: aqua; */
+}
+/* ============== 브랜드 스토리 ========= */
+.brand_intro {
+  position: relative;
+  width: 100%;
+}
+.brand_intro>#brandStoryImg:hover {
+  filter: opacity(0.7);
+  transition: 0.3s;
+}
+.brand_intro img {
+  width: 100%;
+  height: 320px;
+}
+#brandStoryFont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 150px;
+  margin-top: -75px;
+  margin-left: -150px;
+}
+/* ====================================================== */
+/* section.brand_intro>ul.work-list>li {
+  width: 100%;
+}
+section.brand_intro>ul.work-list>li>a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section.brand_intro>ul.work-list>li>a::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: #3f51b5;
+  content: "";
+  opacity: 0; 
+  transition: all 0.2s; 
+}
+section.brand_intro>ul.work-list>li>a:hover {
+  opacity: 0.86;
+}
+section.brand_intro>ul.work-list div.info {
+  position: absolute;
+  top: 0;
+  left: 23px;
+  z-index: 20;
+  opacity: 0;
+  transition: all 0.3s;
+}
+section.brand_intro>ul.work-list>li>a:hover>div.info {
+  transform: translateY(23px);
+  opacity: 1;
+}
+
+section.brand_intro>ul.work-list img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+} */
+/* ====================================================== */
+/* ============= 꽃, 향수 ============ */
+.bottom_img {
+  overflow: hidden;
+  width: 100%;
+  /* background-color: darkgoldenrod; */
+}
+/* ================================== */
+/* ============꽃======= */
+.flower_intro {
+  float: left;
+  width: 50%;
+  position: relative;
+  /* background-color: yellowgreen; */
+}
+.flower_intro>#flowerIntro:hover {
+  filter: opacity(0.7);
+  transition: 0.3s;
+}
+.flower_intro img {
+  width: 100%;
+  height: 320px;
+}
+#flowerIntroFont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250px;
+  height: 120px;
+  margin-top: -60px;
+  margin-left: -125px;
+}
+/* ========향수======== */
+.perfume_intro {
+  float: right;
+  width: 50%;
+  position: relative;
+  /* background-color: cadetblue; */
+}
+.perfume_intro>#perfumeIntro:hover {
+  filter: opacity(0.7);
+  transition: 0.3s;
+}
+.perfume_intro img {
+  width: 100%;
+  height: 320px;
+}
+.perfume_intro>a:hover {
+  filter: opacity(0.7);
+  transition: 0.3s;
+}
+#perfumeIntroFont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250px;
+  height: 120px;
+  margin-top: -60px;
+  margin-left: -125px;
+}
