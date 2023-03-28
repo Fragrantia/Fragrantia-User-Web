@@ -1,0 +1,113 @@
+#notice {
+    margin: 30px auto;
+    width: 70%;
+    height: auto;
+    min-height: 600px;
+}
+
+#notice table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto 0 auto;
+    background-color: #fff;
+    table-layout: auto;
+}
+
+#notice th,
+#notice td {
+    padding: 10px;
+    text-align: center;
+}
+
+#notice td.title {
+    width: 50%;
+}
+
+#notice th {
+    background-color: #eee;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.notice-header:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#notice .title {
+    text-align: left;
+}
+
+#notice .notice-content {
+    display: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+#notice .notice-content .content {
+    padding: 20px;
+    text-align: left;
+    background-color: white;
+}
+
+#notice .notice-content h1 {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#notice .notice-content p {
+    font-size: 14px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    width: 100%;
+}
+
+.pagination ul {
+    display: flex;
+}
+
+.pagination li {
+    margin: 0 10px;
+}
+
+.pagination li a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: #333;
+    border-radius: 5px;
+}
+
+.pagination li a:hover,
+.pagination li a.active {
+    background-color: #333;
+    color: #fff;
+}
+
+.pagination .page_select {
+    background-color: #333;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    #notice table {
+        table-layout: fixed;
+    }
+
+    #notice td.title {
+        width: auto;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .date,
+    .view {
+        display: none;
+    }
+}
