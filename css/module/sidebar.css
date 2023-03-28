@@ -1,39 +1,65 @@
-.sidebar{
-    width: 90%;
-    /* height: 300px; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    /* background-color: rgb(92, 92, 92); */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Sans+KR:wght@300&display=swap");
+*{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
 }
+.sidebar{
+    margin: 0 auto;    
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+/* .sidebarHead{
+    position: absolute;
+    left: 10%;
+    top: 0;
+    width: 70%;
+    height: 50px;
+    font-weight: bold;
+} */
 .sidebarHead{
     width: 100%;
-    height: 50px;
+    margin: 0 10%;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
 }
+
+.search{
+    display: inline-block;
+    width: 40%;
+    /* margin: 2%; */
+    border-bottom: 1px solid rgba(92, 92, 92, 0.15);
+}
+/* .toggleFilter{ 
+    margin-left: 30%;    
+} */
 .filter{
-    width: 100%;
-    /* height: 200px; */
-    display: none;
-    background-color: rgba(92, 92, 92, 0.15);
+    width: 82.5%;
+    position: absolute;
+    top:40px;
+    left: 8.75%;
+    background-color: rgba(250, 250, 250, 0.85);
     justify-content: space-around;
+    color: black;
+    display: none;
 }
 
 .sidebar .filter.show {
-  display: block;
-  display: flex;
+    display: block;
+    display: flex;  
+    z-index: 10;
 }
-.search{
-    display: inline-block;
-    width: 30%;
-    border-bottom: 1px solid rgba(92, 92, 92, 0.15);
-}
-/* .toggleFilter:hover{
-    
-} */
+
 .filter .color,
 .filter .use{
-    width: 40%;
-    /* width: 200px;
-    height: 200px; */
+    width: 30%; /* 30보다 작으면 ceremony 줄바꿈 일어남 */
 }
+img:hover{
+    box-shadow: 10 10 white;
+}
+/* .color>div>a>img:hover{
+    box-shadow: 2 2 black;
+} */
 

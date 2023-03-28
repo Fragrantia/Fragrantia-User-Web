@@ -8,6 +8,4 @@ const filter = document.querySelector('.filter');
 toggleFilter.addEventListener('click', () => {
   filter.classList.toggle('show');
 });
-// toggleFilter.addEventListener('click', () => {
-//   filter.classList.toggle('show');
-// });
+
