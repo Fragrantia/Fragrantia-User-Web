@@ -1,33 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="../../js/pageModuleSetting.js"></script>
-    <link href="../../css/global.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/index.css">
+  <title>Index</title>
+
+  <!-- meta Setting -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 외부 스타일시트 -->
+  <link href="../../css/global.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/index.css">
+
+  <!-- 외부 스크립트(자바스크립트, jQuery) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../../js/pageModuleSetting.js"></script>
 </head>
 <body>
 <div id="header"></div>
 <div id="wrap">
-  <div class="brand_intro">
-    <a href="../page/brandInfo.html" id="brandStoryImg"><img src="../../images/brandStory.jpg" alt="브랜드 소개 영역"></a>
-    <a href="../page/brandInfo.html" id="brandStoryFont"><img src="../../images/brandStoryFont.png"></a>
-  </div>
-  <div class="bottom_img">
-    <div class="flower_intro">
-      <a href="../page/flowerProduct.html" id="flowerIntro"><img src="../../images/flowerIntro.jpg" alt="꽃 상품 소개 영역"></a>
-      <a href="../page/flowerProduct.html" id="flowerIntroFont"><img src="../../images/flowerIntroFont.png"></a>
+  <!-- 브랜드 소개 영역 -->
+  <section class="brand_intro cfixed">
+    <ul class="brand_story">
+      <li>
+        <a href="../page/brandInfo.html">
+          <div class="info" id="brandStoryFont">
+            <img src="../../images/brandStoryFont.png">
+          </div>
+          <img id="imgLarge" src="../../images/brandStory1024.jpg">
+          <img id="imgMedium" src="../../images/brandStory768.jpg">
+        </a>
+      </li>
+    </ul>
+  </section>
+  <!-- 꽃/향수 제품 소개 영역 -->
+  <section class="flowerPerfume">
+    <div class="flexbox">
+      <!-- 꽃 제품 소개 영역 -->
+      <section class="flower_intro cfixed">
+        <ul class="flower">
+          <li>
+            <a href="../page/flowerProduct.html">
+              <div class="info" id="flowerIntroFont">
+                <img src="../../images/flowerIntroFont.png">
+              </div>
+              <img id="imgLarge" src="../../images/flowerIntro1024.jpg">
+              <img id="imgMedium" src="../../images/flowerIntro768.jpg">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- 향수 제품 소개 영역 -->
+      <section class="perfume_intro cfixed">
+        <ul class="perfume">
+          <li>
+            <a href="../page/perfumeProduct.html">
+              <div class="info" id="perfumeIntroFont">
+                <img src="../../images/perfumeIntroFont.png">
+              </div>
+              <img id="imgLarge" src="../../images/perfumeIntro1024.jpg">
+              <img id="imgMedium" src="../../images/perfumeIntro768.jpg">
+            </a>
+          </li>
+        </ul>
+      </section>
     </div>
-    <div class="perfume_intro">
-      <a href="../page/perfumeProduct.html" id="perfumeIntro"><img src="../../images/perfumeIntro.jpg" alt="향수 상품 소개 영역"></a>
-      <a href="../page/perfumeProduct.html" id="perfumeIntroFont"><img src="../../images/perfumeIntroFont.png"></a>
-    </div>
-  </div>
+  </section>
+</div>
 </div>
 <div id="footer"></div>
 </body>
 </html>
-

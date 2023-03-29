@@ -1,43 +1,21 @@
+/* ============= 전체 박스 ============ */
 #wrap {
   position: relative;
   width: 100%;
   margin: 0;
   padding: 0;
-  /* background-color: aqua; */
 }
-/* ============== 브랜드 스토리 ========= */
-.brand_intro {
-  position: relative;
+/* ============== 브랜드 스토리 =========== */
+section.brand_intro>ul.brand_story>li {
   width: 100%;
 }
-.brand_intro>#brandStoryImg:hover {
-  filter: opacity(0.7);
-  transition: 0.3s;
-}
-.brand_intro img {
-  width: 100%;
-  height: 320px;
-}
-#brandStoryFont {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 300px;
-  height: 150px;
-  margin-top: -75px;
-  margin-left: -150px;
-}
-/* ====================================================== */
-/* section.brand_intro>ul.work-list>li {
-  width: 100%;
-}
-section.brand_intro>ul.work-list>li>a {
+section.brand_intro>ul.brand_story>li>a {
   display: block;
   position: relative;
   width: 100%;
   height: 100%;
 }
-section.brand_intro>ul.work-list>li>a::before {
+section.brand_intro>ul.brand_story>li>a::before {
   display: block;
   position: absolute;
   top: 0;
@@ -45,90 +23,241 @@ section.brand_intro>ul.work-list>li>a::before {
   z-index: 10;
   width: 100%;
   height: 100%;
-  background-color: #3f51b5;
   content: "";
-  opacity: 0; 
-  transition: all 0.2s; 
+  opacity: 0;
+  transition: all 0.3s;
 }
-section.brand_intro>ul.work-list>li>a:hover {
+section.brand_intro>ul.brand_story>li>a:hover {
   opacity: 0.86;
 }
-section.brand_intro>ul.work-list div.info {
+section.brand_intro>ul.brand_story div.info {
   position: absolute;
-  top: 0;
-  left: 23px;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 150px;
+  margin-top: -75px;
+  margin-left: -150px;
   z-index: 20;
   opacity: 0;
   transition: all 0.3s;
 }
-section.brand_intro>ul.work-list>li>a:hover>div.info {
-  transform: translateY(23px);
+section.brand_intro>ul.brand_story>li>a:hover>div.info {
+  transform: translateY(-23px);
   opacity: 1;
 }
-
-section.brand_intro>ul.work-list img {
+section.brand_intro>ul.brand_story img {
   display: block;
   width: 100%;
   max-width: 100%;
   height: auto;
-} */
-/* ====================================================== */
-/* ============= 꽃, 향수 ============ */
-.bottom_img {
-  overflow: hidden;
-  width: 100%;
-  /* background-color: darkgoldenrod; */
 }
-/* ================================== */
-/* ============꽃======= */
+/* ============ 꽃 =========== */
 .flower_intro {
   float: left;
-  width: 50%;
   position: relative;
-  /* background-color: yellowgreen; */
-}
-.flower_intro>#flowerIntro:hover {
-  filter: opacity(0.7);
-  transition: 0.3s;
+  width: 50%;
 }
 .flower_intro img {
+  display: block;
+  max-width: 100%;
   width: 100%;
-  height: 320px;
 }
-#flowerIntroFont {
+section.flower_intro>ul.flower>li {
+  width: 100%;
+}
+section.flower_intro>ul.flower>li>a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section.flower_intro>ul.flower>li>a::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+}
+section.flower_intro>ul.flower>li>a:hover {
+  opacity: 0.86;
+}
+section.flower_intro>ul.flower div.info {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 250px;
+  width: 240px;
   height: 120px;
   margin-top: -60px;
-  margin-left: -125px;
+  margin-left: -120px;
+  z-index: 20;
+  opacity: 0;
+  transition: all 0.3s;
 }
-/* ========향수======== */
+section.flower_intro>ul.flower>li>a:hover>div.info {
+  transform: translateY(-23px);
+  opacity: 1;
+}
+section.flower_intro>ul.flower img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+}
+/* =========== 향수 ========== */
 .perfume_intro {
   float: right;
   width: 50%;
   position: relative;
-  /* background-color: cadetblue; */
-}
-.perfume_intro>#perfumeIntro:hover {
-  filter: opacity(0.7);
-  transition: 0.3s;
 }
 .perfume_intro img {
+  display: block;
+  max-width: 100%;
   width: 100%;
-  height: 320px;
 }
-.perfume_intro>a:hover {
-  filter: opacity(0.7);
-  transition: 0.3s;
+section.perfume_intro>ul.perfume>li {
+  width: 100%;
 }
-#perfumeIntroFont {
+section.perfume_intro>ul.perfume>li>a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section.perfume_intro>ul.perfume>li>a::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+}
+section.perfume_intro>ul.perfume>li>a:hover {
+  opacity: 0.86;
+}
+section.perfume_intro>ul.perfume div.info {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 250px;
+  width: 240px;
   height: 120px;
   margin-top: -60px;
-  margin-left: -125px;
+  margin-left: -120px;
+  z-index: 20;
+  opacity: 0;
+  transition: all 0.3s;
+}
+section.perfume_intro>ul.perfume>li>a:hover>div.info {
+  transform: translateY(-23px);
+  opacity: 1;
+}
+section.perfume_intro>ul.perfume img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+}
+/* ================ 반응형 미디어쿼리 설정 부분 =============== */
+@media all and (min-width:769px) {
+  /* 세 번째 트러블 슈팅
+  >> id인 imgLarge와 imgMedium이 html에서 여러번 사용돼서 class로 바꿨는데, 
+     적용이 되지 않는 현상 발생.
+     >> 해결 방안 필요 (해결방안 찾기 전까지는 id 중복으로도 구현 가능해서 id로 사용)
+  */ 
+  #imgLarge {
+    display: block;
+    width: 100%;
+    height: 330px;
+  }
+  #imgMedium {
+    display: none;
+  }
+  #brandStoryFont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 200px;
+    margin-top: -60px;
+    margin-left: -200px;
+  }
+  #flowerIntroFont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 150px;
+    margin-top: -50px;
+    margin-left: -150px;
+  }
+  #perfumeIntroFont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 150px;
+    margin-top: -50px;
+    margin-left: -150px;
+  }
+}
+@media all and (max-width:768px) {
+  #imgLarge {
+    display: none;
+  }
+  #imgMedium {
+    /* 두 번째 트러블 슈팅 부분
+    >> 미디어 크기가 768px 이하로 변경될 경우, 
+       브랜드와 꽃/향수 이미지가 각각 다른 높이를 갖고 꽃/향수는 겹쳐져서 호버 시, 올라오는 글자 이미지까지 겹치는 현상
+       >> section 크기를 조절해도 이미지 크기가 변하지 않는 문제점.
+       >> 이미지에 고정 높이 값 설정 >> 해결 
+    */ 
+    display: block;
+    width: 100%;
+    height: 300px;
+  }
+  #brandStoryFont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 150px;
+    margin-top: -50px;
+    margin-left: -150px;
+  }
+  #flowerIntroFont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 150px;
+    margin-top: -50px;
+    margin-left: -150px;
+  }
+  #perfumeIntroFont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 150px;
+    margin-top: -50px;
+    margin-left: -150px;
+  }
+  .flexbox>section.cfixed { 
+    /* 첫 번째 트러블슈팅 > 해당 미디어 크기에서 꽃/향수 이미지가 겹쳐짐
+    >> object-fit 사용하여 자름. 
+    */
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+    overflow: hidden;
+  }
 }
