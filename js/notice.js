@@ -19,7 +19,9 @@ let reColspan = function () {
 
 $(document).ready(function () {
     $('.notice-header').click(function () {
-        $(this).closest('tr').next('.notice-content').toggle();
+        var content = $(this).closest('tr').next('.notice-content');
+        content.fadeToggle('slow'); // 클릭한 요소 열기/닫기
+        $('.notice-content').not(content).fadeOut(); // 이미 열려있는 요소 닫기
     });
 
     //시작 할때 colspan 화면 크기에 맞게 설정
