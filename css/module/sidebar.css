@@ -43,11 +43,6 @@
     border-radius: 3%;
 }
 
-.sidebar .filter.show {
-    display: flex;
-    flex-direction: column;
-}
-
 .color-box {
     display: flex;
     flex-wrap: wrap;
