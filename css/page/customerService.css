@@ -353,20 +353,31 @@
     width: calc(100% - 80px);
   }
 }
+.wrap .submit_wrap {
+  width: calc(100% - 20px);
+  margin: 20px 10px 0 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (min-width: 768px) {
+  .wrap .submit_wrap {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: calc(100% - 80px);
+  }
+}
+.wrap .submit_wrap button.contact_btn {
+  margin-left: 20px;
+  width: 80px;
+  font-size: 0.8rem;
+  color: grey;
+  text-align: center;
+  padding: 6px;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+}
 
-/* the text color of the drop label*/
-/* underline color for "Browse" button */
-/* the background color of the filepond drop area */
-/* the border radius of the drop area */
-/* the border radius of the file item */
-/* the background color of the file and file panel (used when dropping an image) */
-/* the background color of the drop circle */
-/* the background color of the black action buttons */
-/* the icon color of the black action buttons */
-/* the color of the focus ring */
-/* the text color of the file status and info labels */
-/* error state color */
-/* bordered drop area */
 .filepond--file-action-button {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.5);

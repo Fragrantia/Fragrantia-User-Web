@@ -22,12 +22,13 @@ function validate (email) {
 
   return tester.test(email);
 }
-
+const title = document.querySelector('#title');
 const email = document.querySelector('#email');
-function checkEmail(e){
-    console.log(validate(e.target.value));
-}
-email.addEventListener('input',checkEmail);
+const mainF = document.querySelector('#contactusmain');
+// function checkEmail(e){
+//     console.log(validate(e.target.value));
+// }
+// email.addEventListener('input',checkEmail);
 
 $(function() {
   $('select#category').selectric();
@@ -45,4 +46,35 @@ FilePond.create(fileInput,{
   
   maxFileSize:'10MB',
 
+})
+const reset = document.getElementById('reset');
+reset.addEventListener('click',function(){
+  title.value='';
+  email.value='';
+  mainF.value='';
+})
+
+const submit = document.getElementById('submit');
+submit.addEventListener('click',function(){
+  var c ={
+    t:title.value.length>0,
+    e:validate(email.value),
+    m:mainF.value.length>0
+  }
+  console.log(c)
+  if(
+    Object.values(c).every((erew)=>{
+      console.log(erew)
+      return erew;
+    })
+  ){
+    title.value='';
+    email.value='';
+    mainF.value='';
+    alert('제출되었습니다!');
+  }
+  else{
+    var msg='필수 양식을 적어주세요!';
+    alert(msg);
+  }
 })
