@@ -15,7 +15,9 @@
 <body>
 <div id="header"></div>
 <div class="wrap">
+    
     <div class="contactus_wrap">
+        <div class="contactus_h1">문 의 사 항</div>
         <div class="grid-container container-fluid">
             <div class="row">
                 <div class="label col-md-2">
@@ -32,13 +34,19 @@
                 <div class="contact_input col-md-6">
                     <input type="email" name="contactus_email_input" id="email" placeholder="이메일" required>
                 </div>
-                <div class="col-md-4">
-                    <select class="category selectric-select" id="category" name="">
+                <div class="category_label col-3 col-md-2">
+                    카테고리
+                </div>
+                <div class="col-9 col-md-2">
+                    <select class="category selectric-select" id="category" name="contactus_category_select">
                         <option>꽃</option>
                         <option>향수</option>
                         <option>매장문의</option>
                     </select>
                 </div>
+            </div>
+            <div class="contactus_main">
+                <textarea class="contactus_main_input" rows="5" wrap="soft"></textarea>
             </div>
         </div>
     </div>

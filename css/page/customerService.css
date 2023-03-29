@@ -2,7 +2,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-v4-grid-only@1.0.0/dist/bootstrap-grid.css");
 /*======================================
   Selectric v1.13.0
-  scss변환 해서 커스텀
+  scss변환 커스텀 파일
 ======================================*/
 .selectric-wrapper {
   position: relative;
@@ -14,21 +14,27 @@
 }
 
 .selectric {
+  margin-top: 20px;
   border-bottom: 1px solid grey;
   border-radius: 0px;
   position: relative;
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  .selectric {
+    margin-top: 0;
+  }
 }
 .selectric .label {
   display: block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin: 0 30px 0 10px;
+  margin: 0 33px 0 10px;
   font-size: 12px;
-  line-height: 30px;
+  line-height: 33px;
   color: #444;
-  height: 30px;
+  height: 33px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -39,14 +45,14 @@
   position: absolute;
   right: 0;
   top: 0;
-  width: 38px;
-  height: 38px;
-  line-height: 38px;
-  background-color: #F8f8f8;
+  width: 33px;
+  height: 33px;
+  line-height: 33px;
+  background-color: transparent;
   color: #BBB;
   text-align: center;
   font: 0/0 a;
-  *font: 20px/38px Lucida Sans Unicode, Arial Unicode MS, Arial;
+  *font: 0.6060606061 Lucida Sans Unicode, Arial Unicode MS, Arial;
 }
 .selectric .button:after {
   content: " ";
@@ -231,8 +237,26 @@
   padding-left: 25px;
 }
 
-.wrap .contactus_wrap {
-  padding: 50px;
+@keyframes in {
+  0% {
+    letter-spacing: -17px;
+    opacity: 0;
+  }
+  100% {
+    letter-spacing: 1rem;
+    opacity: 1;
+  }
+}
+.wrap .contactus_h1 {
+  font-size: 2rem;
+  text-align: center;
+  opacity: 0;
+  animation: in 1.5s ease-in-out forwards;
+}
+@media (min-width: 768px) {
+  .wrap .contactus_wrap {
+    padding: 50px;
+  }
 }
 .wrap .contactus_wrap div.label {
   font-size: 1.5rem;
@@ -241,6 +265,21 @@
 @media (min-width: 768px) {
   .wrap .contactus_wrap div.label {
     display: block;
+  }
+}
+.wrap .contactus_wrap div.category_label {
+  color: #444;
+  margin: auto;
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 0;
+}
+@media (min-width: 768px) {
+  .wrap .contactus_wrap div.category_label {
+    padding: 0;
+    font-size: 1.5rem;
   }
 }
 .wrap .contactus_wrap .row {
@@ -263,4 +302,38 @@
   .wrap .contactus_wrap div.contact_input input::placeholder {
     font-size: 0%;
   }
+}
+.wrap .contactus_wrap div.contactus_main {
+  width: 100%;
+}
+.wrap .contactus_wrap div.contactus_main textarea.contactus_main_input {
+  border: 1px rgb(196, 196, 196) solid;
+  border-radius: 10px;
+  width: calc(100% - 20px);
+  margin: 20px 10px 0 10px;
+  padding: 10px;
+  white-space: pre-line;
+  overflow-wrap: break-word;
+  overflow: auto;
+}
+@media (min-width: 768px) {
+  .wrap .contactus_wrap div.contactus_main textarea.contactus_main_input {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px;
+    font-size: 1.2rem;
+    width: calc(100% - 80px);
+  }
+}
+.wrap .contactus_wrap div.contactus_main textarea.contactus_main_input::-webkit-scrollbar {
+  width: 10px;
+}
+.wrap .contactus_wrap div.contactus_main textarea.contactus_main_input::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #ccc;
+}
+.wrap .contactus_wrap div.contactus_main textarea.contactus_main_input::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #eee;
 }

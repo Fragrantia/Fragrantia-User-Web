@@ -12,7 +12,9 @@
 a, li, div, span, button {
     font-family: "Montserrat", "Noto Sans KR",sans-serif; /* 한글용 폰트 */
 }
-
+*{
+    box-sizing: border-box;
+}
 @media all{
     .wrap{
         width:80%;
@@ -25,7 +27,7 @@ a, li, div, span, button {
 }
 @media all and (max-width:768px){
     .wrap{
-        width: 100%;
+        width: calc(100% - 20px); /*margin을 포함해서 100% 계산*/
         margin: 10px;
     }
 }
