@@ -33,7 +33,7 @@
 
 .filter {
     width: 20%;
-    height: 230px;
+    height: auto;
     position: absolute;
     top: 30px;
     background-color: rgba(250, 250, 250, 0.9);
@@ -61,6 +61,7 @@
 .filter .color,
 .filter .use {
     margin-left: 10px;
+
 }
 
 
@@ -76,8 +77,9 @@
 }
 
 .filter .use {
-    margin-top: 20px;
+    margin-top: 10px;
     line-height: 1.5;
+    padding-bottom: 10px;
 }
 
 .use li:hover {
