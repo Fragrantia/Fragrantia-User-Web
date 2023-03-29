@@ -1,0 +1,6 @@
+.scene {
+  width: 90%;
+  height: 100vh;
+  background-image: url('../../images/brandStory1.jpg');
+  overflow: hidden;
+}
