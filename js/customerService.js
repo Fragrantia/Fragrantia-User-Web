@@ -32,3 +32,17 @@ email.addEventListener('input',checkEmail);
 $(function() {
   $('select#category').selectric();
 });
+
+var fileInput = document.querySelector('input.file_input');
+FilePond.registerPlugin(FilePondPluginFileValidateType);
+FilePond.registerPlugin(FilePondPluginFileValidateSize);
+FilePond.create(fileInput,{
+  storeAsFile: true,
+  maxFiles:3,
+  maxParallelUploads:3,
+  labelIdle:"클릭하여 파일을 업로드 하시거나 드래그 하십시오...",
+  acceptedFileTypes: ['image/png', 'image/jpeg','application/x-zip-compressed'],
+  
+  maxFileSize:'10MB',
+
+})
