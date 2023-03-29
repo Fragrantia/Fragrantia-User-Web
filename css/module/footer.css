@@ -54,21 +54,18 @@
 }
 
 @media screen and (max-width: 767px) {
-  .footer{
+  .footer {
     background-color: black;
   }
-
   .footer > .footer_link_wrap {
     margin-top: 1rem;
     margin-left: 10px;
     height: 100px;
   }
-
   .footer > .footer_link_wrap .footer_link {
     color: white;
     background: black;
   }
-
   .footer .item li {
     font-size: 10px;
   }

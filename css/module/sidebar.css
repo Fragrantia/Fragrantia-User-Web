@@ -1,24 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Sans+KR:wght@300&display=swap");
-*{
+
+* {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
 }
-.sidebar{
-    margin: 0 auto;    
+
+.sidebar {
+    margin: 0 auto;
     display: flex;
     position: relative;
     flex-wrap: wrap;
+    width: 100%; /* 너비를 100%로 지정하여 부모 요소가 화면 크기에 맞추도록 함 */
 }
 
-/* .sidebarHead{
-    position: absolute;
-    left: 10%;
-    top: 0;
-    width: 70%;
-    height: 50px;
-    font-weight: bold;
-} */
-.sidebarHead{
+.sidebarHead {
     width: 100%;
     margin: 0 10%;
     font-weight: bold;
@@ -26,40 +21,80 @@
     justify-content: space-between;
 }
 
-.search{
+.search {
     display: inline-block;
     width: 40%;
-    /* margin: 2%; */
     border-bottom: 1px solid rgba(92, 92, 92, 0.15);
 }
-/* .toggleFilter{ 
-    margin-left: 30%;    
-} */
-.filter{
-    width: 82.5%;
+
+.toggleFilter:hover {
+    cursor: pointer;
+}
+
+.filter {
+    width: 20%;
+    height: 230px;
     position: absolute;
-    top:40px;
-    left: 8.75%;
-    background-color: rgba(250, 250, 250, 0.85);
-    justify-content: space-around;
+    top: 30px;
+    background-color: rgba(250, 250, 250, 0.9);
     color: black;
+    right: 10%;
     display: none;
+    border-radius: 3%;
 }
 
 .sidebar .filter.show {
-    display: block;
-    display: flex;  
-    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+
+.color-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.color-box a {
+    margin-right: 3px;
+}
+
+.color-box img:hover {
+    width: 27px;
+    height: 27px;
 }
 
 .filter .color,
-.filter .use{
-    width: 30%; /* 30보다 작으면 ceremony 줄바꿈 일어남 */
+.filter .use {
+    margin-left: 10px;
 }
-img:hover{
-    box-shadow: 10 10 white;
-}
-/* .color>div>a>img:hover{
-    box-shadow: 2 2 black;
-} */
 
+
+.filter .color {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.color h3,
+.use h3 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.filter .use {
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.use li:hover {
+    color: gray; /* 글자 색상 변경 */
+    cursor: pointer; /* 마우스 커서 변경 */
+    font-size: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .filter {
+        width: 40%;
+        right: 7%;
+    }
+
+}
