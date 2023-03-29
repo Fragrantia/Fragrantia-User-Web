@@ -295,6 +295,7 @@
   border-bottom: 1px solid grey;
 }
 .wrap .contactus_wrap div.contact_input input::placeholder {
+  color: grey;
   text-indent: 6px;
   font-size: 1rem;
 }
