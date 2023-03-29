@@ -65,3 +65,10 @@ div.user_logo>a>img {
   height: 56px;
   text-align: center;
 }
+
+@media screen and (max-width: 767px) {
+  /* == 메인 네비 부분 == */
+  .user_header ul.main_nav {
+    width: 50%;
+  }
+}
