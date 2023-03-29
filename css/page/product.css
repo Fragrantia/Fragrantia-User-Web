@@ -40,3 +40,8 @@
         padding-top: 30px;
     } 
 }
+@media all and (max-width:425px){
+    .itembox{
+        height: 250px;
+    }
+}
