@@ -34,7 +34,7 @@
 }
 @media all and (max-width:768px){
     .itembox{
-        height: 350px;
+        height: 40vh;
     }  
     .content2{
         padding-top: 30px;
