@@ -103,4 +103,8 @@
     .view {
         display: none;
     }
+
+    .pagination ul {
+        font-size: 70%;
+    }
 }
