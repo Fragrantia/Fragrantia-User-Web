@@ -1,9 +1,5 @@
-let link = document.getElementsByClassName('a.footerlink');
-for (let i=0;i<link.length;i++){
-    link[i].addEventListener('mousemove',(e)=>{
-        x=e.offsetX;
-        y=e.offsetY;
-        link[i].style.setProperty('--mouse-x', x + "px");
-        link[i].style.setProperty('--mouse-y', y + "px");
-    })
-}
+const bizno = document.getElementById('publisherNo')
+
+bizno.addEventListener('click',function(){
+    window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=3iuo434o32324', '_blank', 'width=750, height=950;');return false;
+})

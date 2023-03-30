@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-v4-grid-only@1.0.0/dist/bootstrap-grid.css");
+@import url("https://unpkg.com/filepond@^4/dist/filepond.css");
 /*======================================
   Selectric v1.13.0
   scss변환 커스텀 파일
@@ -52,7 +53,6 @@
   color: #BBB;
   text-align: center;
   font: 0/0 a;
-  *font: 0.6060606061 Lucida Sans Unicode, Arial Unicode MS, Arial;
 }
 .selectric .button:after {
   content: " ";
@@ -308,7 +308,7 @@
   width: 100%;
 }
 .wrap .contactus_wrap div.contactus_main textarea.contactus_main_input {
-  border: 1px rgb(196, 196, 196) solid;
+  border: 1px #c4c4c4 solid;
   border-radius: 10px;
   width: calc(100% - 20px);
   margin: 20px 10px 0 10px;
@@ -337,4 +337,99 @@
 .wrap .contactus_wrap div.contactus_main textarea.contactus_main_input::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #eee;
+}
+.wrap .contactus_wrap div.contactus_file_input {
+  text-align: right;
+}
+.wrap div.file_container {
+  width: calc(100% - 20px);
+  margin: 20px 10px 0 10px;
+}
+@media (min-width: 768px) {
+  .wrap div.file_container {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: calc(100% - 80px);
+  }
+}
+.wrap .submit_wrap {
+  width: calc(100% - 20px);
+  margin: 20px 10px 0 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (min-width: 768px) {
+  .wrap .submit_wrap {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: calc(100% - 80px);
+  }
+}
+.wrap .submit_wrap button.contact_btn {
+  margin-left: 20px;
+  width: 80px;
+  font-size: 0.8rem;
+  color: grey;
+  text-align: center;
+  padding: 6px;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+}
+.wrap .submit_wrap button.contact_btn:active {
+  color: white;
+  background-color: grey;
+}
+
+.filepond--file-action-button {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.filepond--file-action-button:hover {
+  box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.9);
+}
+.filepond--file-action-button:focus {
+  box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.9);
+}
+
+.filepond--drop-label {
+  color: #555;
+}
+
+.filepond--label-action {
+  text-decoration-color: #aaa;
+}
+
+.filepond--panel-root {
+  background-color: #eee;
+  border-radius: 0.5em;
+  background-color: transparent;
+  border: 1px solid #c4c4c4;
+}
+
+.filepond--item-panel {
+  border-radius: 0.5em;
+  background-color: #555;
+}
+
+.filepond--drip-blob {
+  background-color: #999;
+}
+
+.filepond--file {
+  color: white;
+}
+
+[data-filepond-item-state*=error] .filepond--item-panel {
+  background-color: red;
+}
+
+[data-filepond-item-state*=invalid] .filepond--item-panel {
+  background-color: red;
+}
+
+[data-filepond-item-state=processing-complete] .filepond--item-panel {
+  background-color: green;
 }
