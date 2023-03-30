@@ -35,7 +35,7 @@ div.item_content .item_info_wrap div {
 }
 div.item_content .item_info_wrap .item_name {
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 div.item_content .item_info_wrap .item_price {
   font-size: 1.4rem;
@@ -46,7 +46,7 @@ div.item_content .item_info_wrap .item_description {
 }
 div.item_content .item_info_wrap .seller_list_wrap .seller_header {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   border-bottom: 1px rgba(128, 128, 128, 0.068) solid;
 }
 div.item_content .item_info_wrap .seller_list_wrap .seller_list_container::-webkit-scrollbar {
@@ -67,7 +67,7 @@ div.item_content .item_info_wrap .seller_list_wrap .seller_list_container ul li 
   border-bottom: 1px solid #f0f0f0;
   display: block;
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #7c7c7c;
   transition: all 0.5s ease-in-out;
 }
@@ -86,7 +86,7 @@ div.item_content .item_info_wrap .seller_list_wrap .seller_list_container ul li 
     font-size: 16px;
   }
   div.item_content .item_info_wrap .item_description {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   div.item_content .item_info_wrap .seller_list_wrap {
     text-align: center;
@@ -109,7 +109,7 @@ div.item_content .item_info_wrap .seller_list_wrap .seller_list_container ul li 
     width: calc(40% - 20px);
   }
   div.item_content .item_info_wrap .item_description {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   div.item_content .item_info_wrap .seller_list_wrap {
     text-align: left;
