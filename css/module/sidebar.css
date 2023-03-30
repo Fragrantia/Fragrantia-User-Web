@@ -53,6 +53,12 @@
     margin-right: 3px;
 }
 
+.color img{
+    width: 30px;
+    height: 30px;
+    margin-right:5px ;
+}
+
 .color-box img:hover {
     width: 27px;
     height: 27px;
@@ -75,7 +81,6 @@
     font-weight: bold;
     font-size: 18px;
 }
-
 .filter .use {
     margin-top: 10px;
     line-height: 1.5;
