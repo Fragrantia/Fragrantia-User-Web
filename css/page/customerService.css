@@ -377,6 +377,10 @@
   border: 1px solid #c4c4c4;
   border-radius: 10px;
 }
+.wrap .submit_wrap button.contact_btn:active {
+  color: white;
+  background-color: grey;
+}
 
 .filepond--file-action-button {
   cursor: pointer;
