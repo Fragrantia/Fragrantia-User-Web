@@ -32,7 +32,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0 33px 0 10px;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 33px;
   color: #444;
   height: 33px;
@@ -179,7 +179,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 20px;
   min-height: 20px;
 }
@@ -187,7 +187,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 20px;
   min-height: 20px;
   display: block;
@@ -243,7 +243,7 @@
     opacity: 0;
   }
   100% {
-    letter-spacing: 1rem;
+    letter-spacing: 0.2rem;
     opacity: 1;
   }
 }
@@ -251,10 +251,13 @@
   font-size: 2rem;
   text-align: center;
   opacity: 0;
-  animation: in 1.5s ease-in-out forwards;
+  animation: in 1s ease-in-out forwards;
 }
 @media (min-width: 768px) {
   .wrap .contactus_wrap {
+    margin-left: 40px;
+    margin-right: 40px;
+    width: calc(100% - 80px);
     padding: 50px;
   }
 }
@@ -271,7 +274,7 @@
   color: #444;
   margin: auto;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 0;
@@ -309,9 +312,9 @@
 }
 .wrap .contactus_wrap div.contactus_main textarea.contactus_main_input {
   border: 1px #c4c4c4 solid;
+  width: 100%;
   border-radius: 10px;
-  width: calc(100% - 20px);
-  margin: 20px 10px 0 10px;
+  margin: 20px 0 0 0;
   padding: 10px;
   white-space: pre-line;
   overflow-wrap: break-word;
@@ -320,11 +323,9 @@
 @media (min-width: 768px) {
   .wrap .contactus_wrap div.contactus_main textarea.contactus_main_input {
     margin-top: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
     padding: 20px;
     font-size: 1.2rem;
-    width: calc(100% - 80px);
+    width: 100%;
   }
 }
 .wrap .contactus_wrap div.contactus_main textarea.contactus_main_input::-webkit-scrollbar {
@@ -348,15 +349,12 @@
   }
 }
 .wrap div.file_container {
-  width: calc(100% - 20px);
-  margin: 20px 10px 0 10px;
+  width: 100%;
+  margin: 10px 0 0 0;
 }
 @media (min-width: 768px) {
   .wrap div.file_container {
     margin-top: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-    width: calc(100% - 80px);
   }
 }
 .wrap .submit_wrap {
@@ -376,12 +374,12 @@
 .wrap .submit_wrap button.contact_btn {
   margin-left: 20px;
   width: 80px;
-  font-size: 0.8rem;
-  color: grey;
+  font-size: 1rem;
+  color: black;
   text-align: center;
-  padding: 6px;
+  padding: 8px;
   border: 1px solid #c4c4c4;
-  border-radius: 10px;
+  border-radius: 16px;
 }
 .wrap .submit_wrap button.contact_btn:active {
   color: white;
@@ -438,4 +436,8 @@
 
 [data-filepond-item-state=processing-complete] .filepond--item-panel {
   background-color: green;
+}
+
+.filepond--credits {
+  display: none;
 }

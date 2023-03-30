@@ -66,17 +66,21 @@
 .color img{
     width: 30px;
     height: 30px;
-    margin-right:5px ;
+    margin:0px 5px 5px 0px;
+    /* position: relative;
+    flex-grow: 0; */
+    transition: all 0.2s ease-in-out;
 }
 
 .color-box img:hover {
     width: 27px;
     height: 27px;
+    transition: all 0.2s ease-in-out;
 }
 
 .filter .color,
 .filter .use {
-    margin-left: 10px;
+    margin: 0px 10px;
 
 }
 
@@ -105,8 +109,9 @@
 
 @media screen and (max-width: 767px) {
     .filter {
-        width: 40%;
+        width: 44%;
         right: 7%;
     }
+    
 
 }

@@ -86,7 +86,7 @@ div.item_content .item_info_wrap .seller_list_wrap .seller_list_container ul li 
     font-size: 16px;
   }
   div.item_content .item_info_wrap .item_description {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   div.item_content .item_info_wrap .seller_list_wrap {
     text-align: center;
@@ -109,7 +109,7 @@ div.item_content .item_info_wrap .seller_list_wrap .seller_list_container ul li 
     width: calc(40% - 20px);
   }
   div.item_content .item_info_wrap .item_description {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   div.item_content .item_info_wrap .seller_list_wrap {
     text-align: left;
