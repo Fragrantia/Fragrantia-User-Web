@@ -17,11 +17,11 @@ $(function () {
     loadModule('header')
     loadModule('footer')
 
-    if (document.title.toLowerCase().includes("flower")) {
+    if (document.title.includes("FlowerProduct")) {
         loadModule('sidebarFlower')
         loadModule('topButton')
     }
-    if (document.title.toLowerCase().includes("perfume")) {
+    if (document.title.includes("PerfumeProduct")) {
         loadModule('sidebarPerfume')
         loadModule('topButton')
     }
