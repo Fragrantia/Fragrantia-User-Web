@@ -37,7 +37,7 @@ $(function() {
 var fileInput = document.querySelector('input.file_input');
 FilePond.registerPlugin(FilePondPluginFileValidateType);
 FilePond.registerPlugin(FilePondPluginFileValidateSize);
-FilePond.create(fileInput,{
+var pond= FilePond.create(fileInput,{
   storeAsFile: true,
   maxFiles:3,
   maxParallelUploads:3,
@@ -49,9 +49,12 @@ FilePond.create(fileInput,{
 })
 const reset = document.getElementById('reset');
 reset.addEventListener('click',function(){
-  title.value='';
-  email.value='';
-  mainF.value='';
+  if(window.confirm("다시 작성하시겠습니까?")){
+    title.value='';
+    email.value='';
+    mainF.value='';
+    pond.removeFiles();
+  }
 })
 
 const submit = document.getElementById('submit');
@@ -68,10 +71,14 @@ submit.addEventListener('click',function(){
       return erew;
     })
   ){
-    title.value='';
-    email.value='';
-    mainF.value='';
-    alert('제출되었습니다!');
+    if(window.confirm("제출하시겠습니까?")){
+      title.value='';
+      email.value='';
+      mainF.value='';
+      pond.removeFiles();
+      alert('제출되었습니다!');
+    }
+    
   }
   else{
     var msg='필수 양식을 적어주세요!';
