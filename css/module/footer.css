@@ -12,6 +12,20 @@
   color: #727272;
   font-family: "Noto Sans KR", sans-serif;
 }
+.footer li.icon {
+  margin-bottom: 10px;
+}
+.footer .fa-brands {
+  transition: all 0.3s ease-in-out;
+}
+.footer .fa-brands:hover {
+  color: black;
+}
+@media screen and (max-width: 767px) {
+  .footer .fa-brands:hover {
+    color: white;
+  }
+}
 .footer > .footer_link_wrap {
   margin-top: 1rem;
   margin-left: 30px;
