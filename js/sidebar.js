@@ -11,21 +11,21 @@ var itemsXY = [];
 var ease  = Power1.easeInOut;
 
 // 초기 위치 저장
-for (var i = 0; i < items.length; i++) {
-  items[i].style.setProperty('order',i);
-  var node = items[i];
+// for (var i = 0; i < items.length; i++) {
+//   items[i].style.setProperty('order',i);
+//   var node = items[i];
   
-  // Initialize transforms on node
-  TweenLite.set(node, { x: 0 });
+//   // Initialize transforms on node
+//   TweenLite.set(node, { x: 0 });
    
-  itemsXY[i] = {
-    transform: node._gsTransform,
-    x: node.offsetLeft,
-    y: node.offsetTop,
-    node
-  };
+//   itemsXY[i] = {
+//     transform: node._gsTransform,
+//     x: node.offsetLeft,
+//     y: node.offsetTop,
+//     node
+//   };
   
-} 
+// } 
 search.addEventListener('keyup',function(e){
   const word=(e.target.value).toLowerCase();
   for(var i = 0;i<items.length;i++){
