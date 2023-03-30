@@ -44,6 +44,10 @@
   background: transparent;
   margin-left: 6px;
 }
+.footer > .company_info button:active {
+  background-color: grey;
+  color: white;
+}
 .footer .item {
   margin: 10px;
 }
