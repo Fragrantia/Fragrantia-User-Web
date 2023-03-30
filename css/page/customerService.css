@@ -339,7 +339,13 @@
   background-color: #eee;
 }
 .wrap .contactus_wrap div.contactus_file_input {
+  font-size: 3vw;
   text-align: right;
+}
+@media (min-width: 768px) {
+  .wrap .contactus_wrap div.contactus_file_input {
+    font-size: 1rem;
+  }
 }
 .wrap div.file_container {
   width: calc(100% - 20px);
@@ -347,7 +353,7 @@
 }
 @media (min-width: 768px) {
   .wrap div.file_container {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: 40px;
     margin-right: 40px;
     width: calc(100% - 80px);
