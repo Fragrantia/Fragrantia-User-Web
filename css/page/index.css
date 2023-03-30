@@ -1,44 +1,14 @@
-/* ============= 전체 박스 ============ */
-#wrap {
-  position: relative;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
 /* ============== 브랜드 스토리 =========== */
-section.brand_intro>ul.brand_story>li {
-  width: 100%;
-}
 section.brand_intro>ul.brand_story>li>a {
   display: block;
   position: relative;
   width: 100%;
   height: 100%;
 }
-section.brand_intro>ul.brand_story>li>a::before {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  width: 100%;
-  height: 100%;
-  content: "";
-  opacity: 0;
-  transition: all 0.3s;
-}
 section.brand_intro>ul.brand_story>li>a:hover {
   opacity: 0.86;
 }
 section.brand_intro>ul.brand_story div.info {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 300px;
-  height: 150px;
-  margin-top: -75px;
-  margin-left: -150px;
-  z-index: 20;
   opacity: 0;
   transition: all 0.3s;
 }
@@ -46,56 +16,16 @@ section.brand_intro>ul.brand_story>li>a:hover>div.info {
   transform: translateY(-23px);
   opacity: 1;
 }
-section.brand_intro>ul.brand_story img {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
 /* ============ 꽃 =========== */
 .flower_intro {
   float: left;
   position: relative;
   width: 50%;
 }
-.flower_intro img {
-  display: block;
-  max-width: 100%;
-  width: 100%;
-}
-section.flower_intro>ul.flower>li {
-  width: 100%;
-}
-section.flower_intro>ul.flower>li>a {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-section.flower_intro>ul.flower>li>a::before {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  width: 100%;
-  height: 100%;
-  content: "";
-  opacity: 0;
-  transition: all 0.3s;
-}
 section.flower_intro>ul.flower>li>a:hover {
   opacity: 0.86;
 }
 section.flower_intro>ul.flower div.info {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 240px;
-  height: 120px;
-  margin-top: -60px;
-  margin-left: -120px;
-  z-index: 20;
   opacity: 0;
   transition: all 0.3s;
 }
@@ -103,56 +33,16 @@ section.flower_intro>ul.flower>li>a:hover>div.info {
   transform: translateY(-23px);
   opacity: 1;
 }
-section.flower_intro>ul.flower img {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  height: 400px;
-}
 /* =========== 향수 ========== */
 .perfume_intro {
   float: right;
   width: 50%;
   position: relative;
 }
-.perfume_intro img {
-  display: block;
-  max-width: 100%;
-  width: 100%;
-}
-section.perfume_intro>ul.perfume>li {
-  width: 100%;
-}
-section.perfume_intro>ul.perfume>li>a {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-section.perfume_intro>ul.perfume>li>a::before {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  width: 100%;
-  height: 100%;
-  content: "";
-  opacity: 0;
-  transition: all 0.3s;
-}
 section.perfume_intro>ul.perfume>li>a:hover {
   opacity: 0.86;
 }
 section.perfume_intro>ul.perfume div.info {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 240px;
-  height: 120px;
-  margin-top: -60px;
-  margin-left: -120px;
-  z-index: 20;
   opacity: 0;
   transition: all 0.3s;
 }
@@ -160,13 +50,7 @@ section.perfume_intro>ul.perfume>li>a:hover>div.info {
   transform: translateY(-23px);
   opacity: 1;
 }
-section.perfume_intro>ul.perfume img {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  height: 400px;
-}
-/* ================ 반응형 미디어쿼리 설정 부분 =============== */
+/* ================ 반응형 미디어쿼리(PC) =============== */
 @media all and (min-width:769px) {
   /* 세 번째 트러블 슈팅
   >> id인 imgLarge와 imgMedium이 html에서 여러번 사용돼서 class로 바꿨는데, 
@@ -209,6 +93,7 @@ section.perfume_intro>ul.perfume img {
     margin-left: -150px;
   }
 }
+/* =============== 반응형 미디어쿼리(태블릿 및 모바일) ===============  */
 @media all and (max-width:768px) {
   #imgLarge {
     display: none;
@@ -230,8 +115,11 @@ section.perfume_intro>ul.perfume img {
     left: 50%;
     width: 300px;
     height: 150px;
-    margin-top: -50px;
+    margin-top: -75px;
     margin-left: -150px;
+  }
+  #brandStoryFont>img { /* 폰트 이미지가 부모요소 div의 수직 중앙 정렬이 되지 않아서 이미지 자체에 마진을 주어 해결 */
+    margin-top: 12px;
   }
   #flowerIntroFont {
     position: absolute;
@@ -239,7 +127,7 @@ section.perfume_intro>ul.perfume img {
     left: 50%;
     width: 300px;
     height: 150px;
-    margin-top: -50px;
+    margin-top: -75px;
     margin-left: -150px;
   }
   #perfumeIntroFont {
@@ -248,8 +136,24 @@ section.perfume_intro>ul.perfume img {
     left: 50%;
     width: 300px;
     height: 150px;
-    margin-top: -50px;
+    margin-top: -75px;
     margin-left: -150px;
+  }
+  #brandStoryFont.info, 
+  #flowerIntroFont.info, 
+  #perfumeIntroFont.info { /* 폰트 이미지들의 좌측 쏠림 현상 > 중앙 정렬로 해결 */
+    text-align: center;
+  }
+  section.brand_intro>ul.brand_story div.info, 
+  section.flower_intro>ul.flower div.info,
+  section.perfume_intro>ul.perfume div.info {
+    opacity: 1;
+  }
+  section.brand_intro>ul.brand_story>li>a:hover>div.info,
+  section.flower_intro>ul.flower>li>a:hover>div.info,
+  section.perfume_intro>ul.perfume>li>a:hover>div.info {
+    transform: translateY(0px);
+    opacity: 1;
   }
   .flexbox>section.cfixed { 
     /* 첫 번째 트러블슈팅 > 해당 미디어 크기에서 꽃/향수 이미지가 겹쳐짐
