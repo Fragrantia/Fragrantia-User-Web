@@ -22,9 +22,18 @@
 }
 
 .search {
+    padding-bottom: 4px;
+    padding-left: 4px;
     display: inline-block;
-    width: 40%;
+    width: 40%;    
+    transition: all 0.3s;
     border-bottom: 1px solid rgba(92, 92, 92, 0.15);
+}
+.search::placeholder {
+    color:gray;
+}
+.search:focus {
+    border-bottom: 1px solid rgba(92, 92, 92, 1);
 }
 
 .toggleFilter:hover {
