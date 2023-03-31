@@ -10,7 +10,6 @@
 }
 
 .itembox {
-    /* background-color: antiquewhite; */
     width: 45%;
     height: 450px;
     margin-bottom: 5%;
@@ -35,25 +34,15 @@
 
 @media all and (max-width: 768px) {
     .itembox {
-        height: 220px;
+        height: 250px;
     }
 
     .itembox img {
-        height: 200px;
+        height: 220px;
     }
 
     .content2 {
         padding-top: 30px;
-    }
-}
-
-@media all and (max-width: 425px) {
-    .itembox {
-        height: 220px;
-    }
-
-    .itembox img {
-        height: 200px;
     }
 
     .itembox h3 {
