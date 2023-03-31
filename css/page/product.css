@@ -35,7 +35,11 @@
 
 @media all and (max-width: 768px) {
     .itembox {
-        height: 40vh;
+        height: 220px;
+    }
+
+    .itembox img {
+        height: 200px;
     }
 
     .content2 {
@@ -46,6 +50,10 @@
 @media all and (max-width: 425px) {
     .itembox {
         height: 220px;
+    }
+
+    .itembox img {
+        height: 200px;
     }
 
     .itembox h3 {
