@@ -1,6 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css");
 div.item_content {
-  margin-top: 100px;
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
 }
