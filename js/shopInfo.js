@@ -33,7 +33,7 @@ $(function () {
         },
         {
             name: 'Jamsil Store',
-            address: '서울시 잠실 ○○○○○ ○○',
+            address: '서울시 송파구 잠실동 ○○',
             tel: '02-0000-0000',
             latlng: new kakao.maps.LatLng(37.514366, 127.101938),
             image: '../../images/shopInfo3.jpg',
@@ -50,7 +50,7 @@ $(function () {
         },
         {
             name: 'Yangjae Store',
-            address: '서울시 서초구 양재동 ○○○○○ ○○',
+            address: '서울시 서초구 양재동 ○○',
             tel: '02-0000-0000',
             latlng: new kakao.maps.LatLng(37.470576, 127.040736),
             image: '../../images/shopInfo2.jpg',
